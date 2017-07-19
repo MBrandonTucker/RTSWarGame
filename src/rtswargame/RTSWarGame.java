@@ -1,3 +1,5 @@
+//Brandon Tucker Senior Project Spring 2017
+
 package rtswargame;
 
 import java.awt.Color;
