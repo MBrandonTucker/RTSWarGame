@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title> JQuery Examples </title>
+	<style>
+		#par1{
+            display: none;
+        }
+	</style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+       $(document).ready(function(){
+            //$('css-selector').someJQueryFunction(){}
+            //$('img').hide();  //automatic looping, hides all images on the page
+            //$(".warning").fadeIn(); //normal (400ms)
+            //$('input[type="text"]').css(...);
+            //$('a[href$=".pdf"]).someJQueryfunction();
+            //$('div p.warning').someJQueryfunction();
+
+            //$("#par1").css({border: "1px solid black"}).fadeIn(6000); //chaining and 
+                //automatic looping
+            //alert($("#errors").html());
+            //$("#errors").html("<p> Replacing Errors </p>");
+
+            //$("#errors h2").text("No errors, congrats");
+
+            //$("#errors").append("<p> paragraph </p>"); //last child
+
+            //$("#errors").prepend("<p> paragraph </p>"); //first child
+
+            //$("#errors").remove();
+
+            //$("#errors").replacewith("<p> ... </p>");
+
+            $("a[href^='http://']").addClass("externalLink");
+            $("#alertBox").removeClass('someClass');
+
+            $("#errors").css('font-size'); //reading
+            $("#errors").css({border: "1px solid black",
+                            'background-color':"rgb(255,234,123)"}); //setting
+            $("#errors").css("font-size", "200%");
+
+            var image = $("selector").attr("src");
+            $("selector").attr('src', "path-to-file");
+
+            $('selector').fadeOut(fast); //by default it is normal (400ms)
+                                    //slow (600ms), normal(400ms), fast(200ms)
+            $('selector').fadeIn();
+
+            $('selector').each(function(){
+                var source = $(this).attr('src');
+            });
+
+            //obj.addEventListener('click', function(evt){});
+            //obj.onclick = function(evt){};
+            $('selector').mouseover(function(evt){
+
+            });
+            $('selector').click(function(evt){
+
+            });
+            $('selector').dblclick(function(evt){
+
+            });
+
+            $('selector').hover(function(evt){}, function(evt){});
+
+            $('selector').click(function(evt){
+                //do something
+                evt.preventDefault();
+                //return false;
+            });
+
+            $('selector').off();
+            $('selector').off('click mouseover');
+
+            $('selector').show('optional-time-argument');
+            $('selector').hide('optional-time-argument');
+            $('selector').toggle('optional-time-argument');
+            $('selector').fadeTo('normal', .75);
+            $('selector').slideUp('optional-time-argument');
+            $('selector').slideDown('optional-time-argument');
+
+            $('selector').animate(
+                {
+                    left:'650px'
+                },
+                1000
+            );
+       });
+
+       /*
+       $(function(){
+
+       });
+		*/
+	</script>
+</head>
+
+	<body>	
+		<p id="par1"> this paragraph should fade in the view in 6 seconds. </p>
+        <div id="container">
+            <div id="errors">
+                <h2> Errors: </h2>
+            </div>
+        </div>
+	</body>
+</html>

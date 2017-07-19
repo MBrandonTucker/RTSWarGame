@@ -1,0 +1,26 @@
+Select your number of starting units(max 30)
+Select enemy number of starting units(max 30)
+Use mouse left click and drag to select units.
+Use mouse right click to command selected units
+to move.
+Use A key to set attack (cursor will change) and right click to attack.
+Commanding selected units to move to an area in between themselves will
+command them to get into formation.
+eleminate all enemy units win.
+
+
+
+
+Cheat Codes:
+
+press enter: 
+type any of these cheats:
+				"GodMode"
+				"NukeMode"
+				"needforspeed"
+				"badBreath"
+				"callInTheBigGuns"
+				"straightToTheGround"
+				"theEnemyHaveEyes"
+				"survival"
+				"march"
